@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
+// import s from 'Container.module.css';
 
+const Container = ({ children }) => {
+    return <div > {children} </div> 
+};
 
-const Container = (() => {
-    return (
-        <div>
-            
-        </div>
-    );
-});
+// Container.propTypes = {
+
+// }
 
 export default Container;

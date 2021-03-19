@@ -1,11 +1,13 @@
 import logo from './logo.svg';
-import Container from "./components/UI/Container/index";
+import ProductCard from './components/ProductCard/'
+import Container from './components/UI/Container/';
+
 import './App.css';
 
 function App() {
   return (
-    <Container>
-
+<Container>
+  <ProductCard />
     </Container>
   );
 }
