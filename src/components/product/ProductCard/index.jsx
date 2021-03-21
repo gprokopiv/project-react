@@ -7,11 +7,17 @@ import Price from './ProductPrice';
 
 
 const ProductCard = ({ imgSrc, price, rating, description }) => {
+    const highRating = rating>=4;
     return <section className={s.card}>
+        <div className={s.cardInner}> 
         <img className={s.photo} src={imgSrc} />
-        <p>{description}</p>
+       <div className={s.content}>
+           {highRating && "Top sales"}
+       <p>{description}</p>
     <Rating rating={4}/>
     <Price value={1000} />
+       </div>
+        </div>
     </section>
 }
 ProductCard.propTypes =  {

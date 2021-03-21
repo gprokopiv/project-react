@@ -3,9 +3,36 @@ import PropTypes from 'prop-types';
 import s from './rating.module.css'
 
 const Rating =( {rating, limit}) => {
+    const coloredRatingWidth = (rating / limit) * 100 + '%';
+    let emptyStarList = [];
+    let coloredStarList = [];
+ for (let i = 0; i < limit; i++) {
+    emptyStarList.push(
+        <img key={i}
+        className={s.star}
+        src=''
+        alt='empty' />
+
+    );
+    coloredStarList.push(
+        <img key={i}
+        className={s.star}
+        src=''
+        alt='empty' />
+    )
+ }
+ const EmptyStars = () => emptyStarList;
+ const ColoredStars = () => coloredStarList;
     return (
         <div className={s.rating}>
-            Rating is {rating} of {limit}
+            <div className={s.emptyStars}>
+            <EmptyStars/>
+            <div className={s.coloredStars}
+            style={{ width: coloredRatingWidth }}>
+            <ColoredStars/>
+            </div>
+
+            </div>
         </div>
     );
 };

@@ -6,7 +6,9 @@ import s from './productList.module.css';
 const ProductList = ({items}) => {
     return (
         <div className={s.list}>
-            {items.map(({id, price, rating, description}) => (
+            {items.length === 0 ?
+            "Sorry, nothing is here"
+            : items.map(({id, price, rating, description}) => (
                 <ProductCard 
                 key={id}
                 price={price}
@@ -14,6 +16,7 @@ const ProductList = ({items}) => {
                 description={description}
                 />
             ))}
+            
         </div>
     );
 };
