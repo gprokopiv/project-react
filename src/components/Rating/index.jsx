@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import s from './rating.module.css'
+import s from './rating.module.css';
+
+
 
 const Rating =( {rating, limit}) => {
     const coloredRatingWidth = (rating / limit) * 100 + '%';
@@ -10,14 +12,14 @@ const Rating =( {rating, limit}) => {
     emptyStarList.push(
         <img key={i}
         className={s.star}
-        src=''
+        src='./'
         alt='empty' />
 
     );
     coloredStarList.push(
         <img key={i}
         className={s.star}
-        src=''
+        src='./'
         alt='empty' />
     )
  }
