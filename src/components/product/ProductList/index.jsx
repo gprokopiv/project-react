@@ -25,7 +25,7 @@ ProductList.propTypes = {
     items: PropTypes.arrayOf(PropTypes.shape({
         imgSrc: PropTypes.string,
     price: PropTypes.string.isRequired,
-    rating: PropTypes.number,
+    rating: PropTypes.strings,
     description: PropTypes.string.isRequired,
 
     }))

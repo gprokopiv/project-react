@@ -10,7 +10,7 @@ const ProductCard = ({ imgSrc, price, rating, description }) => {
     const highRating = rating>=4;
     return <section className={s.card}>
         <div className={s.cardInner}> 
-        <img className={s.photo} src={imgSrc} />
+        <img className={s.photo} src={imgSrc} alt='img' />
        <div className={s.content}>
            {highRating && "Top sales"}
        <p>{description}</p>
@@ -22,7 +22,7 @@ const ProductCard = ({ imgSrc, price, rating, description }) => {
 }
 ProductCard.propTypes =  {
     imgSrc: PropTypes.string,
-    descriptione: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
     rating: PropTypes.number,
 
