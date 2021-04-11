@@ -12,14 +12,14 @@ const Rating =( {rating, limit}) => {
     emptyStarList.push(
         <img key={i}
         className={s.star}
-        src='./'
+        src='./img/emptystar.svg'
         alt='empty' />
 
     );
     coloredStarList.push(
         <img key={i}
         className={s.star}
-        src='./'
+        src='./img/coloredStar.svg'
         alt='empty' />
     )
  }

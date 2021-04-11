@@ -12,8 +12,8 @@
     height: 100%;
   }
   
-  .cardInner:hover .content,
-  .cardInner:hover::before {
+  .cardInner:hover,
+  .cardInner:hover::before  {
     opacity: 1;
   }
   
@@ -40,10 +40,10 @@
     object-fit: cover;
   }
   
-  /* .content {
-    opacity: 0;
-    transition: opacity 0.4s;
-  } */
+  .content:hover,
+  .content:hover::before  {
+    opacity: 1;
+  }
   
   .description {
     margin-top: 0;
