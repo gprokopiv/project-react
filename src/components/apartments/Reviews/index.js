@@ -1,17 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReviewItem from './ReviewItem/';
+import ReviewList from './RewievList';
 import mokedReviews from '../../../data/mokedReview.json'
 
 const Reviews = (props) => {
     return (
        <>
-          {mokedReviews.map(mokedReview => (
+       <ReviewList /> 
+          {/* {mokedReviews.map(({id, rating, author, content }) => (
             <ReviewItem
-            key={mokedReview.id} rating={mokedReview.rating} title={mokedReview.author} description={mokedReview.content}
+            key={id} rating={rating} title={author} description={content}
          
             />
-          ))}
+          ))} */}
       </>
       );
 
