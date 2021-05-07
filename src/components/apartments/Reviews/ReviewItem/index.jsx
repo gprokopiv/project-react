@@ -6,12 +6,17 @@ import ReviewAvatar from './ReviewAvatar';
 
 const ReviewItem = ({title, rating, description= '' }) => {
     return (
-        <div className={s.review}>
+    <div className={s.review}>
+        <div className={s.header}>
             <ReviewAvatar />
-            <h2 className={s.title}>{title}</h2>
+            <div className={s.details}>
+                 <h2 className={s.title}>{title}</h2>
             <Rating rating={rating} />
-            <p className={s.description}>{description}</p>
+            </div>
+           
         </div>
+        <p className={s.description}>{description}</p>
+     </div>
     );
 };
 

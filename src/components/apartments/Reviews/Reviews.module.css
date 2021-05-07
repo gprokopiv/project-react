@@ -1,0 +1,15 @@
+.reviews {
+  background: chartreuse;
+  padding: 2px;
+}
+
+.showMore {
+  width: 100%;
+  font-size: 16px;
+  font-size: 16px;
+  font-family: inherit;
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  cursor:pointer;
+}
