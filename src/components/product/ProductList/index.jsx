@@ -24,9 +24,9 @@ const ProductList = ({items}) => {
 ProductList.propTypes = {
     items: PropTypes.arrayOf(PropTypes.shape({
         imgSrc: PropTypes.string,
-    price: PropTypes.string.isRequired,
+    price: PropTypes.number,
     rating: PropTypes.strings,
-    description: PropTypes.string.isRequired,
+    description: PropTypes.string,
 
     }))
     

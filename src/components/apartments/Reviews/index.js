@@ -15,10 +15,11 @@ const averageRating = +( totalRating / mockedReviews.length).toFixed(1);
 class Reviews extends Component {
    state = {
      showAll: false, 
-     reviwsLimit: 2,
+     reviewsLimit: 2,
    };
 
    toggleReviews = () => {
+     console.log(1111)
      this.setState((prevState) => ({
        showAll: !prevState.showAll,
      }));
@@ -60,7 +61,10 @@ return (
 //             };
 
 Reviews.propTypes = {
-    
+  reviews: PropTypes.string,
+  totalRating: PropTypes.number.isRequired,
+  amount: PropTypes.number.isRequired,
+
 };
 
 export default Reviews;
