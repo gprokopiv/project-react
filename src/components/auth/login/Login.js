@@ -3,6 +3,8 @@ import AuthSection from '../authSection/';
 import AuthCard from '../authCard/';
 import Input from '../../UI/input/';
 
+import s from './Login.module.css';
+
 export default class Login extends Component {
 state = {
   formData: {
@@ -29,15 +31,11 @@ handleChange = (event) => {
 
   )
 }
-
-
-
-
-
   render() {
     return (
       <AuthSection as="article">
         <AuthCard>
+          <h1>Login</h1>
 <form onSubmit={this.handleSubmit}> 
 
 <Input 
@@ -50,7 +48,7 @@ onChange={this.handleChange}
 <Input 
 className={s.authInput}
 name='password'
-placeholder='Password'
+placeholder='password'
 onChange={this.handleChange}
 />
 
