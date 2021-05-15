@@ -6,13 +6,14 @@ import logo from './logo.svg';
 // import ApartmentPage from './pages/Apartment';
 import './App.css';
 import Login from './components/auth/login';
+import Registration from './components/auth/registration';
 
 function App() {
   return (
 <div>
 
   <Login />
-  {/* <Registration /> */}
+  <Registration />
 {/* <ApartmentPage />
   <ComponentWithState />
   <ProductList items={mockData} /> */}

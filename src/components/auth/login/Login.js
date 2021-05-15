@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import AuthSection from '../authSection/';
 import AuthCard from '../authCard/';
 import Input from '../../UI/input/';
-
+// import Title from '../../UI/typography/title';
+import PrimaryButton from '../../UI/button/Button';
 import s from './Login.module.css';
 
 export default class Login extends Component {
@@ -35,7 +36,8 @@ handleChange = (event) => {
     return (
       <AuthSection as="article">
         <AuthCard>
-          <h1>Login</h1>
+{/* <Title className={s.authStyle}> Login</Title> */}
+<h1>Login</h1> 
 <form onSubmit={this.handleSubmit}> 
 
 <Input 
@@ -52,6 +54,9 @@ placeholder='password'
 onChange={this.handleChange}
 />
 
+<PrimaryButton className={s.authButton} type="submit"> 
+Enter
+</PrimaryButton>
 </form>
         </AuthCard>
 
