@@ -12,8 +12,9 @@ function App() {
   return (
 <div>
 
-  <Login />
-  <Registration />
+
+   <Login /> 
+  {/* <Registration /> */} 
 {/* <ApartmentPage />
   <ComponentWithState />
   <ProductList items={mockData} /> */}

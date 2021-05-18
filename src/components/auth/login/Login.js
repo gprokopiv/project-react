@@ -5,6 +5,7 @@ import Input from '../../UI/input/';
 // import Title from '../../UI/typography/title';
 import PrimaryButton from '../../UI/button/Button';
 import s from './Login.module.css';
+import InputTraining from '../InputTraining'
 
 export default class Login extends Component {
 state = {
@@ -35,11 +36,13 @@ handleChange = (event) => {
   render() {
     return (
       <AuthSection as="article">
+
         <AuthCard>
+
 {/* <Title className={s.authStyle}> Login</Title> */}
 <h1>Login</h1> 
 <form onSubmit={this.handleSubmit}> 
-
+<InputTraining/>
 <Input 
 className={s.authInput}
 name='login'
