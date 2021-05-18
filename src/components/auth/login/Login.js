@@ -19,6 +19,14 @@ handleSubmit =(event) => {
   // console.log(this.state.formData);
 }
 
+formSubmitHandler = data => {
+setTimeout(() => {
+  console.log(data);
+}
+
+)
+}
+
 handleChange = (event) => {
   const { value, name} = event.target;
 
@@ -42,7 +50,9 @@ handleChange = (event) => {
 {/* <Title className={s.authStyle}> Login</Title> */}
 <h1>Login</h1> 
 <form onSubmit={this.handleSubmit}> 
-<InputTraining/>
+
+<InputTraining onSubnit={this.formSubmitHandler}/>
+
 <Input 
 className={s.authInput}
 name='login'

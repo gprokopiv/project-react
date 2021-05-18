@@ -6,7 +6,7 @@ import s from './Button.module.css';
 const Button = ({ children, className, ...restProps}) => {
   const classList = [className, s.button].join(' ');
   return (
-    <button classNmae={classList} {...restProps}>
+    <button className={classList} {...restProps}>
       {children}
     </button>
   );
